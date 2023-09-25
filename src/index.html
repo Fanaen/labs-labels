@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="fr" moznomarginboxes mozdisallowselectionprint>
+  <head>
+    <meta charset="utf-8">
+    <title>Printable labels 7.3cm x 8.3cm</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- <link rel="shortcut icon" href="favicon.ico"> -->
+    <!-- <link rel="apple-touch-icon" href="apple-touch-icon.png"> -->
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <link rel="stylesheet" media="screen" href="styles/screen.scss">
+    <link rel="stylesheet" href="styles/print.scss">
+  </head>
+  <body>
+    <!--[if lt IE 10]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <header class="container no-print">
+      <h1>Printable labels 7.3 x 8.3cm</h1>
+
+      <div id="when-empty">
+        <!-- Instructions on how to use this tool -->
+        <details>
+          <summary><b class="number">1.</b> Open a spreadsheet like <a href="https://www.libreoffice.org/discover/calc/"><img src="assets/icon-LibreOffice-Calc.png"
+            class="icon">LibreOffice Calc</a> or
+        <a href="https://www.microsoft.com/en-us/microsoft-365/excel">Excel</a></summary>
+          <p>Others like 
+            <a href="https://www.apple.com/numbers/">Numbers</a> or online tools like
+            <a href="https://www.google.com/intl/en/sheets/about/">Google Sheets</a> should work too. </p>
+        </details>
+        <details>
+          <summary><b class="number">2.</b> Put in it what you want on the labels (<a href="assets/Labs-label-starter.ods" target="_blank" rel="noopener">example</a>)</summary>
+          <p>
+            <ul style="margin-left:32px">
+              <li>1 column = 1 row on the label.</li>
+              <li>First column is dedicated to the big number/code at the bottom of the label.</li>
+              <li>A column without header is ignored.</li>
+              <li>The style of the spreadsheet doesn't matter so you may go fancy with colors✨!</li>
+            </ul> 
+          </p>
+          <a href="assets/Labs-label-starter.ods" target="_blank" rel="noopener" role="button">Here is an example to get started.</a>
+        </details>
+        <details>
+          <summary><b class="number">3.</b> <kbd>Ctrl + A</kbd> then <kbd>Ctrl + C</kbd> in the spreadsheet</summary>
+          <p>Or select with the mouse then <mark>right click</mark> then select <mark>Copy</mark></p>
+        </details>
+        
+        <details>
+          <summary><b class="number">4.</b> <kbd>Ctrl + V</kbd> on this page</summary>
+          <p>Or select with the mouse then <mark>right click</mark> then select <mark>Paste</mark></p>
+        </details>
+      </div>
+      <div id="when-not-empty" class="hidden">
+        <!-- Labels are ready, let's gooooo -->
+        <a href="#" onclick="window.print();" role="button">Print the labels!</a>
+        <a id="erase-button" href="#" role="button" class="secondary" style="float: right;">Erase all the labels</a>
+      </div>
+      <!--  <nav>
+        <ul>
+          <li>
+            <details role="list">
+              <summary aria-haspopup="listbox" role="button">Format d'étiquette</summary>
+              <ul role="listbox" id="schema-selector">
+              </ul>
+            </details>
+          </li>
+        </ul>
+      </nav> -->
+    </header>
+
+    <div id="display" class="container printable-labels">
+
+    </div>
+
+    <div class="container no-print" >
+      <form id="form" class="hidden" method="get">
+        <input id="schema-input" name="schema" type="hidden" />
+        <input id="schema-input" name="render" type="hidden" value="true" />
+        <div id="form-holder"></div>
+        <button type="submit" style="margin-top: 32px;">Afficher</button>
+      </form>
+    </div>
+      
+    <footer class="container no-print">
+      <small>Built with 
+        <a target="_blank" rel="noopener" href="https://picocss.com">Pico</a>, 
+        <a target="_blank" rel="noopener" href="https://parceljs.org/">Parcel</a>, 
+        <a target="_blank" rel="noopener" href="https://www.papaparse.com/">Papa Parse</a> and
+        <a target="_blank" rel="noopener" href="https://carlosroso.com/notyf/">Notyf</a> by 
+        <a target="_blank" rel="noopener" href="http://fanaen.fr">Elouan Poupard-Cosquer</a> </small>
+    </footer>
+
+    <script src="scripts/main.ts" type="module"></script>
+  </body>
+</html>

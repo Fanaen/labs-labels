@@ -1,0 +1,8 @@
+node_modules
+dist
+.tmp
+.idea/
+.parcel-cache
+yarn-error.log
+.~lock.*
+.~lock.*

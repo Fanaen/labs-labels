@@ -1,0 +1,26 @@
+{
+  "name": "labs-labels",
+  "version": "1.0.0",
+  "description": "Printable labels 7.3cm x 8.3cm",
+  "private": true,
+  "devDependencies": {
+    "@parcel/transformer-sass": "2.9.3",
+    "@parcel/transformer-typescript-types": "^2.9.3",
+    "@types/papaparse": "^5.3.9",
+    "parcel": "^2.9.3",
+    "process": "^0.11.10",
+    "typescript": "^5.2.2"
+  },
+  "engines": {
+    "node": "^20.5.0",
+    "yarn": "^1.22"
+  },
+  "scripts": {
+    "serve": "parcel src/index.html"
+  },
+  "dependencies": {
+    "@picocss/pico": "^1.5.10",
+    "notyf": "^3.10.0",
+    "papaparse": "^5.4.1"
+  }
+}
