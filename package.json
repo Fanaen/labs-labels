@@ -12,12 +12,12 @@
     "typescript": "^5.2.2"
   },
   "engines": {
-    "node": "^20.5.0",
+    "node": ">=18",
     "yarn": "^1.22"
   },
   "scripts": {
     "serve": "parcel src/index.html",
-    "build": "parcel build src/index.html"
+    "deploy": "rm -rf dist && parcel build src/index.html --public-url /labs-labels"
   },
   "dependencies": {
     "@picocss/pico": "^1.5.10",
