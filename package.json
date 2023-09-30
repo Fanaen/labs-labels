@@ -16,11 +16,13 @@
     "yarn": "^1.22"
   },
   "scripts": {
-    "serve": "parcel src/index.html"
+    "serve": "parcel src/index.html",
+    "build": "parcel build src/index.html"
   },
   "dependencies": {
     "@picocss/pico": "^1.5.10",
     "notyf": "^3.10.0",
     "papaparse": "^5.4.1"
-  }
+  },
+  "browserslist": "> 0.5%, last 2 versions, not dead"
 }
