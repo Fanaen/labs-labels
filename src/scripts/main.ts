@@ -1,5 +1,5 @@
 import { parse } from 'papaparse';
-import { toastr, togglePrintButtons as togglePrintButtons, wireButtons } from './view';
+import { toastr, togglePrintButtons, wireButtons, wireFontSizeFields } from './views';
 import { SpreadsheetProcessor } from './spreadsheet';
 import { NotyfNotification } from 'notyf';
 
@@ -91,3 +91,4 @@ addEventListener('paste', async evt => {
 wireButtons({
     onEraseAll: () => processedSpreadsheets.clear(),
 });
+wireFontSizeFields();

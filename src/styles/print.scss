@@ -43,6 +43,8 @@
 }
 
 #display {
+  font-size: 9pt;
+
   .row {
     margin-top: 2px;
     margin-bottom: 2px;
@@ -57,7 +59,6 @@
     // display: inline-block;
     // width: 50%;
     padding: $padding-vertical 2pt $padding-vertical 4pt;
-    font-size: 9pt;
     text-align: right;
   }
 
@@ -66,7 +67,6 @@
     // grid-row: 1;
     // display: inline;
     padding: $padding-vertical $padding-vertical $padding-vertical 2pt;
-    font-size: 9pt;
     font-weight: bold;
   }
 

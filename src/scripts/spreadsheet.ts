@@ -1,4 +1,4 @@
-import { PrintableLabel } from "./view";
+import { PrintableLabel } from './views';
 
 interface Header {
     key: string;

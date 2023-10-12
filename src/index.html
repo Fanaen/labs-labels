@@ -54,9 +54,24 @@
         </details>
       </div>
       <div id="when-not-empty" class="hidden">
+        <div class="grid">
+          <label for="smallFontSize">
+            Small font size
+            <span class="default-size">100% is 9pt</span>
+            <input type="text" id="smallFontSize" name="smallFontSize" value="100%" title="100% or 9pt" required>
+          </label>
+
+          <label for="largeFontSize">
+            Large font size
+            <span class="default-size">100% is 1.5cm</span>
+            <input type="text" id="largeFontSize" name="largeFontSize" value="100%" title="100% or 1.5cm" required>
+          </label>
+
+        </div>
         <!-- Labels are ready, let's gooooo -->
         <a href="#" onclick="window.print();" role="button">Print the labels!</a>
-        <a id="erase-button" href="#" role="button" class="secondary" style="float: right;">Erase all the labels</a>
+        <a id="erase-button" href="#" role="button" class="secondary" style="float: right; margin-left: 16px;">Erase all the labels</a>
+        <a id="reset-font-size-button" href="#" role="button" class="secondary" style="float: right;">Reset font size</a>
       </div>
     </header>
 
