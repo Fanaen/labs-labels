@@ -16,7 +16,7 @@
     "yarn": "^1.22"
   },
   "scripts": {
-    "serve": "parcel src/index.html",
+    "serve": "parcel src/index.html --public-url /labs-labels",
     "deploy": "rm -rf dist && parcel build src/index.html --public-url /labs-labels"
   },
   "dependencies": {
